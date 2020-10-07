@@ -1,0 +1,49 @@
+
+timestamp: 1945_09_16
+activity_time: 1945-09-16
+person: 
+   Area: Abbey
+   Country: England
+   PersonID: 1
+   Gender: Male
+   DOB: 2000-04-09 00:00:00
+   Surname: Douglas
+   GivenName: Joseph
+   School: Abbey School
+   GP: Abbey GP
+   Terminal: False
+   Path1Status: Finish
+   This: {'name': 'Obs1', 'value': {'quantity': 4.840190496048315, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}, 'date': '2000-04-09T00:41:00', 'id': UUID('e1537b79-79fa-4442-af89-0d22ce177dd0')}
+   HasFirstChild: 'goodbye world'
+   Obs1: {'quantity': 4.840190496048315, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}
+----------------------------
+person['Hist']':  
+   HasFirstChild: [{'value': "'goodbye world'", 'date': '2000-04-09T00:00:00', 'id': UUID('af432be3-a63b-481a-9716-719d25399357')}]
+   Obs1: [{'value': {'quantity': 4.840190496048315, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}, 'date': '2000-04-09T00:41:00', 'id': UUID('e1537b79-79fa-4442-af89-0d22ce177dd0')}]
+person['Last']':  
+   HasFirstChild: {'value': "'goodbye world'", 'date': '2000-04-09T00:00:00', 'id': UUID('af432be3-a63b-481a-9716-719d25399357')}
+   Obs1: {'value': {'quantity': 4.840190496048315, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}, 'date': '2000-04-09T00:41:00', 'id': UUID('e1537b79-79fa-4442-af89-0d22ce177dd0')}
+timestamp: 1945_09_16
+activity_time: 1945-09-16
+person: 
+   Area: Abbey
+   Country: England
+   PersonID: 1
+   Gender: Male
+   DOB: 2000-04-09 00:00:00
+   Surname: Douglas
+   GivenName: Joseph
+   School: Abbey School
+   GP: Abbey GP
+   Terminal: False
+   Path1Status: Finish
+   This: {'name': 'Obs1', 'value': {'quantity': 4.7456615335287475, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}, 'date': '2000-04-09T01:03:00', 'id': UUID('55c6b68e-6fca-4093-b472-ceaa1fd0426e')}
+   HasFirstChild: 'goodbye world'
+   Obs1: {'quantity': 4.7456615335287475, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}
+----------------------------
+person['Hist']':  
+   HasFirstChild: [{'value': "'goodbye world'", 'date': '2000-04-09T00:00:00', 'id': UUID('41c4612d-ddc1-4589-82b0-34b0f44f2b95')}]
+   Obs1: [{'value': {'quantity': 4.7456615335287475, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}, 'date': '2000-04-09T01:03:00', 'id': UUID('55c6b68e-6fca-4093-b472-ceaa1fd0426e')}]
+person['Last']':  
+   HasFirstChild: {'value': "'goodbye world'", 'date': '2000-04-09T00:00:00', 'id': UUID('41c4612d-ddc1-4589-82b0-34b0f44f2b95')}
+   Obs1: {'value': {'quantity': 4.7456615335287475, 'unit': 'mmol/l', 'code': {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]}}, 'date': '2000-04-09T01:03:00', 'id': UUID('55c6b68e-6fca-4093-b472-ceaa1fd0426e')}

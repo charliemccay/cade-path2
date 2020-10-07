@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="45bbeaec-f08a-42ae-80c8-3b2604c89959"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="45bbeaec-f08a-42ae-80c8-3b2604c89959"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/f6dc4b4c-f834-4b5a-a664-2cb25977be8c"/>
+        <display value="Stevenson, Alicia"/>
+    </subject>
+    <receivedTime value="1978-11-27T00:32:00Z"/>
+    <collection>
+        <collectedDateTime value="1978-11-27T00:32:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/45bbeaec-f08a-42ae-80c8-3b2604c89959
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/45bbeaec-f08a-42ae-80c8-3b2604c89959/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/45bbeaec-f08a-42ae-80c8-3b2604c89959/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

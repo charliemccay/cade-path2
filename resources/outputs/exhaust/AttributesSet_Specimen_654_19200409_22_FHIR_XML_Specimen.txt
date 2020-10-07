@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="86989a83-7d82-40cc-9c48-9afffbc7a46c"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="86989a83-7d82-40cc-9c48-9afffbc7a46c"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/6b8e3903-eb1f-47cf-8abf-8cefda1e0453"/>
+        <display value="Hawkins, Sarah"/>
+    </subject>
+    <receivedTime value="2017-07-18T00:36:00Z"/>
+    <collection>
+        <collectedDateTime value="2017-07-18T00:36:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/86989a83-7d82-40cc-9c48-9afffbc7a46c
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/86989a83-7d82-40cc-9c48-9afffbc7a46c/_history/1&quot; in 3ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/86989a83-7d82-40cc-9c48-9afffbc7a46c/_history/1&quot; in 3ms"/>
+   </issue>
+</OperationOutcome>

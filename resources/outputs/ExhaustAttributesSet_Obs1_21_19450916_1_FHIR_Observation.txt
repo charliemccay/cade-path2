@@ -1,0 +1,32 @@
+{
+  "resourceType": "Observation",
+  "id": e1537b79-79fa-4442-af89-0d22ce177dd0,
+  "status": "final",
+  "code": {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]},
+  "subject": {
+    "reference": "Patient/1"
+  },
+  "effectiveDateTime": "1945-09-16",
+  "valueQuantity": {
+    "value": "4.840190496048315",
+    "unit": "mmol/l",
+    "system": "http://unitsofmeasure.org",
+    "code": "mmol/l"
+  }
+}
+{
+  "resourceType": "Observation",
+  "id": 55c6b68e-6fca-4093-b472-ceaa1fd0426e,
+  "status": "final",
+  "code": {'coding': [{'system': 'http://snomed.info/sct', 'code': '1003131000000101', 'display': 'Serum fasting glucose level'}]},
+  "subject": {
+    "reference": "Patient/1"
+  },
+  "effectiveDateTime": "1945-09-16",
+  "valueQuantity": {
+    "value": "4.7456615335287475",
+    "unit": "mmol/l",
+    "system": "http://unitsofmeasure.org",
+    "code": "mmol/l"
+  }
+}

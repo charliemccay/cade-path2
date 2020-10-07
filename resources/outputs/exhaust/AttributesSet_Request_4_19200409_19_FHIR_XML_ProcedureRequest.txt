@@ -1,0 +1,60 @@
+<ProcedureRequest>
+    <id value="b6175b9e-a74a-4812-b685-c71d4d0522e6"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="b6175b9e-a74a-4812-b685-c71d4d0522e6"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/37cc6410-4d4d-44d1-8183-13e2bf5fa77c"/>
+        <display value="McKenzie, Gabriel"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/339498ec-c928-4864-9b97-01b3c144df80"/>
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/85b0d4e0-aa0d-499f-b1bc-01812d2b411d"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://localhost:8080/baseDstu3/ProcedureRequest/b6175b9e-a74a-4812-b685-c71d4d0522e6
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/b6175b9e-a74a-4812-b685-c71d4d0522e6/_history/1&quot; in 10ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/b6175b9e-a74a-4812-b685-c71d4d0522e6/_history/1&quot; in 10ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,18 @@
+pathway,Node,GivenAttribute,TemplateName,EndPoint,Percentage,Attribute,ExpressionType,Value,TypeConnections,Connection
+Path1,patient_assessment,,FHIR_XML_Patient.txt,Patient/,,PatientRcorded,string,True, ['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,lab_test,,FHIR_XML_Observation.txt,Observation/,,obs,script,"{'code': '27113001','DisplayName': 'Body weight','value': randint(54,120),'unit':'kg'}", ['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,send_report,,FHIR_XML_DiagnosticReport.txt,DiagnosticReport/,,Report,script,"{'Code':'1028441000000104','DisplayName':'Potassium Level (Observable entity)'}", ['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,send_report,,FHIR_Bundle.txt,Bundle/$validate,,BundleSent,string,True, ['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': False, 'method_request': 'POST'}"
+Path1,test_request,,FHIR_XML_PerformingOrg.txt,Organization/,,PerformingOrg,script,"{'Code':'TKD13','DisplayName':'Midtown District Hospital','AddressLine':'Beckett Street','AddressCity':'Leeds','AddressDistrict':'West YorkShire','AddressPostalCode':'LS9 7TF'}", ['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,test_request,,FHIR_XML_RequestingHCP.txt,Practitioner/,,RequestingHCP,script,"{'Code':'G6040649','DisplayName':'Dr Jane Green'}", ['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,test_request,,FHIR_XML_OrgRequesting.txt,Organization/,,OrgRequesting,script,"{'Code':'D82015','DisplayName':'Manor GP Practice','AddressLine':'30/32 Bridge Street','AddressCity':'Downham Market','AddressDistrict':'Norfolk','AddressPostalCode':'PE38 9DH'}",['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,Specimen_check,,FHIR_XML_ProcedureRequest.txt,ProcedureRequest/,,Request,script,"{'Code':'26604007','DisplayName':'FBC - Full blood count','text':'FBC'}",['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,Specimen_check,,FHIR_XML_Specimen.txt,Specimen/,,Specimen,script,"{'Code':'53130003','DisplayName':'Venous blood (substance)'}",['fhir'],"{'base': 'http://localhost:8080/baseDstu3/','headers': {'Content-Type': 'application/xml'},'include_id': True, 'method_request': 'PUT'}"
+Path1,Specimen_check,,,,,CollectingHCP,script,"{'Code':'J7040649','DisplayName':'Alice Jones'}",['fhir'],
+Path1,lab_test,,,,,PerformingHCP,script,"{'Code':'J7040649','DisplayName':'Alice Jones'}",['fhir'],
+Path1,Specimen_check,,,,,OrgCollecting,script,"{'Code':'D82015','DisplayName':'Manor GP Practice','AddressLine':'30/32 Bridge Street','AddressCity':'Downham Market','AddressDistrict':'Norfolk','AddressPostalCode':'PE38 9DH'}",['fhir'],
+Path1,receive_report,,,,,Observation,script,"{'Value':'4.8','Unit':'mmol/L','ReferenceLow':'3.5','ReferenceHigh':'5.3'}",['fhir'],
+Path1,Start,,,,"",UUID,script,uuid(),['fhir'],
+Path1,Start,,,,"",NhsNumber,string,7832003812,['fhir'],
+Path1,Start,,,,,randID,script,"uniform(3.9, 5.4)",['fhir'],
+Path1,Start,,,,,anotheTest,script,{'Value':uuid()},['fhir'],

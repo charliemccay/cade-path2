@@ -1,0 +1,60 @@
+<ProcedureRequest>
+    <id value="8837871b-d0ce-4baa-98c1-fbca3e33b89a"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="8837871b-d0ce-4baa-98c1-fbca3e33b89a"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/75b6f0f1-b239-4170-b942-868e20423c40"/>
+        <display value="Rahman, Eva"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/151cced3-065f-435e-be2e-3554578d3646"/>
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/339f369a-0234-40e4-9606-359f8fbdc66e"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://localhost:8080/baseDstu3/ProcedureRequest/8837871b-d0ce-4baa-98c1-fbca3e33b89a
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/8837871b-d0ce-4baa-98c1-fbca3e33b89a/_history/1&quot; in 6ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/8837871b-d0ce-4baa-98c1-fbca3e33b89a/_history/1&quot; in 6ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="78564dd5-5eb0-47fe-8ce3-51664b3008cb"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="78564dd5-5eb0-47fe-8ce3-51664b3008cb"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/a1570fcd-7f87-4b5b-98c8-2857b30d6a8c"/>
+        <display value="Fry, Gabriel"/>
+    </subject>
+    <receivedTime value="1973-08-04T00:28:00Z"/>
+    <collection>
+        <collectedDateTime value="1973-08-04T00:28:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/78564dd5-5eb0-47fe-8ce3-51664b3008cb
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/78564dd5-5eb0-47fe-8ce3-51664b3008cb/_history/1&quot; in 3ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/78564dd5-5eb0-47fe-8ce3-51664b3008cb/_history/1&quot; in 3ms"/>
+   </issue>
+</OperationOutcome>

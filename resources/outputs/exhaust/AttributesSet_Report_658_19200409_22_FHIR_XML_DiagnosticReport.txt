@@ -1,0 +1,56 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="8ca3051c-5210-48e4-9b83-af0f7e661c63"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/e5a2675b-9dca-46b4-9c0c-64c9c8d6a873"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6b8e3903-eb1f-47cf-8abf-8cefda1e0453"/>
+        <display value="Hawkins, Sarah"/>
+    </subject>
+    <issued value="2017-07-18T00:51:00Z"/>
+    <performer>
+        <actor>
+            <reference value="Organization/bb1bb05f-1668-4bfe-a903-99941b4177b3"/>
+            <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/de6098e8-6cd2-4280-afb6-1743c8f59d16"/>
+    </result>
+</DiagnosticReport>
+http://localhost:8080/baseDstu3/DiagnosticReport/8ca3051c-5210-48e4-9b83-af0f7e661c63
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/8ca3051c-5210-48e4-9b83-af0f7e661c63/_history/1&quot; in 9ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/8ca3051c-5210-48e4-9b83-af0f7e661c63/_history/1&quot; in 9ms"/>
+   </issue>
+</OperationOutcome>

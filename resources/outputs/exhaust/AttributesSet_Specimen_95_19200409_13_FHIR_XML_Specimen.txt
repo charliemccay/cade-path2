@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="dc3743d9-a12b-443d-ad28-49de481d8744"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="dc3743d9-a12b-443d-ad28-49de481d8744"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/7be93f44-67a5-4f6f-99a1-e9194608f430"/>
+        <display value="Jackson, Shannon"/>
+    </subject>
+    <receivedTime value="1944-08-28T00:46:00Z"/>
+    <collection>
+        <collectedDateTime value="1944-08-28T00:46:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/dc3743d9-a12b-443d-ad28-49de481d8744
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/dc3743d9-a12b-443d-ad28-49de481d8744/_history/1&quot; in 9ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/dc3743d9-a12b-443d-ad28-49de481d8744/_history/1&quot; in 9ms"/>
+   </issue>
+</OperationOutcome>

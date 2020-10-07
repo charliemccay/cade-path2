@@ -1,0 +1,12 @@
+version: '3'
+services:
+  fhir:
+    image: smartonfhir/hapi:r3-empty
+    ports:
+    - "8080:8080"
+  cade:
+    image: ramseysys/cade-2:latest
+    network_mode: "service:fhir"
+    command: "python start.py"
+    volumes:
+    - ./resources:/app/resources

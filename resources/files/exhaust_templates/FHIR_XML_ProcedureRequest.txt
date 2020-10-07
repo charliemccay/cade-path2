@@ -1,0 +1,36 @@
+<ProcedureRequest>
+    <id value="{{ person.Last.Request.id }}"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="{{ person.Last.Request.id }}"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="{{ person.Request.Code }}"/>
+            <display value="{{ person.Request.DisplayName }}"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/{{ person.Last.PatientRcorded.id }}"/>
+        <display value="{{ person.Surname }}, {{ person.GivenName }}"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/{{ person.Last.RequestingHCP.id }}"/>
+            <display value="{{ person.RequestingHCP.DisplayName }}"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/{{ person.Last.PerformingOrg.id }}"/>
+        <display value="{{ person.PerformingOrg.DisplayName }}"/>
+    </performer>
+    <note>
+        <text value="{{ person.Request.text }}"/>
+    </note>
+</ProcedureRequest>

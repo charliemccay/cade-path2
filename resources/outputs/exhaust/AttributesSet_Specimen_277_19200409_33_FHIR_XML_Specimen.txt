@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="cde928e5-9aad-42fa-8457-16ee93f739af"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="cde928e5-9aad-42fa-8457-16ee93f739af"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/0b8918b9-b533-43a8-a75a-dea327b3e321"/>
+        <display value="Hill, Jack"/>
+    </subject>
+    <receivedTime value="1968-04-22T00:13:00Z"/>
+    <collection>
+        <collectedDateTime value="1968-04-22T00:13:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/cde928e5-9aad-42fa-8457-16ee93f739af
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/cde928e5-9aad-42fa-8457-16ee93f739af/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/cde928e5-9aad-42fa-8457-16ee93f739af/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

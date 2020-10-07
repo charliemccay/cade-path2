@@ -1,0 +1,4 @@
+TriggerPathway,TriggerNode,TriggerEvent,TemplateName,Validation,Destination,id_attr
+AbdelsJourney,Birth,Start,FHIR_Patient.txt,,Patient/,patient_id
+Path1,Finish,Start,InputsListing.txt,,,
+Path1,Finish,Start,person_json.txt,,,

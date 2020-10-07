@@ -1,0 +1,222 @@
+{"resourceType": "Patient",
+  "id": "e4d654ce-40a5-410d-98c3-5ee5ab9da634",
+  "active": true,
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://ramseysystems.co.uk",
+      "value": "18",
+      "assigner": {
+        "display": "CADE Simulation"
+      }
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "Vincent",
+      "given": [
+        "Billy"
+      ]
+    }
+  ],
+  "birthDate": "1939-09-05"
+}
+
+
+{
+  "resourceType": "Observation",
+  "id": 6fb0d366-d028-40f2-86f1-850c28f2eb4c,
+  "status": "final",
+  "category": {"coding": [{"system": "http://hl7.org/fhir/observation-category", "code": "vital-signs", "display": "Vital Signs"}]},
+  "code": {'coding': [
+    {"system": "http://loinc.org", "code": "3141-9", "display": "Weight Measured"},
+    {'system': 'http://snomed.info/sct', 'code': '27113001', 'display': 'Body weight'}
+    ]},
+  "subject": {
+    "reference": "Patient/e4d654ce-40a5-410d-98c3-5ee5ab9da634"
+  },
+  "effectiveDateTime": "1939-09-05",
+  "valueQuantity": {
+    "value": "73",
+    "unit": "kg",
+    "system": "http://unitsofmeasure.org",
+    "code": "kg"
+  }
+}
+
+{
+  "resourceType": "Observation",
+  "id": 56d1caf9-122b-4a21-8985-2f1699e905a5,
+  "status": "final",
+  "category": {"coding": [{"system": "http://hl7.org/fhir/observation-category", "code": "vital-signs", "display": "Vital Signs"}]},
+  "code": {'coding': [
+    {"system" : "http://loinc.org", "code" : "8302-2", "display" : "Body height"},
+    {'system': 'http://snomed.info/sct', 'code': '50373000', 'display': 'Body height'}]},
+  "subject": {
+    "reference": "Patient/85b6afff-e8b7-4275-a600-50172c68d9c3"
+  },
+  "effectiveDateTime": "1939-09-05",
+  "valueQuantity": {
+    "value": "160",
+    "unit": "cm",
+    "system": "http://unitsofmeasure.org",
+    "code": "cm"
+  }
+}
+{
+  "resourceType": "Observation",
+  "id": 56d1caf9-122b-4a21-8985-2f1699e905a5,
+  "status": "final",
+  "category": {"coding": [{"system": "http://hl7.org/fhir/observation-category", "code": "vital-signs", "display": "Vital Signs"}]},
+  "code": {'coding': [
+    {"system" : "http://loinc.org", "code" : "'39156-5'", "display" : "Body Mass Index"},
+    {'system': 'http://snomed.info/sct', 'code': '60621009', 'display': 'Body mass index'}]},
+  "subject": {
+    "reference": "Patient/85b6afff-e8b7-4275-a600-50172c68d9c3"
+  },
+  "effectiveDateTime": "1939-09-05",
+  "valueQuantity": {
+    "value": "160",
+    "unit": "cm",
+    "system": "http://unitsofmeasure.org",
+    "code": "cm"
+  }
+}
+
+{
+  "resourceType": "Observation",
+  "id": 56d1caf9-122b-4a21-8985-2f1699e905a5,
+  "status": "final",
+  "code": {'coding': [
+    {"system" : "http://loinc.org", "code" : "8302-2", "display" : "Body height"},
+    {'system': 'http://snomed.info/sct', 'code': '50373000', 'display': 'Body height'}]},
+  "subject": {
+    "reference": "Patient/85b6afff-e8b7-4275-a600-50172c68d9c3"
+  },
+  "effectiveDateTime": "1939-09-05",
+  "valueQuantity": {
+    "value": "160",
+    "unit": "cm",
+    "system": "http://unitsofmeasure.org",
+    "code": "cm"
+  }
+}
+
+
+{
+  "resourceType": "Condition",
+  "id": "cond-id",
+  "clinicalStatus": {
+    "coding": [{"system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active"}]},
+  "category": [{
+        "coding": [
+        {"system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "problem-list-item", "display": "Problem List Item"}]
+        }],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "162863004",
+        "display": "Body mass index 25-29 - overweight"
+      }
+    ]
+  },
+  "subject": {"reference": "Patient/example"}
+}
+
+{
+  "resourceType": "Condition",
+  "id": "cond-id",
+  "clinicalStatus": {
+    "coding": [{"system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active"}]},
+  "category": [{
+        "coding": [
+        {"system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "problem-list-item", "display": "Problem List Item"}]
+        }],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "414915002",
+        "display": "obese"
+      }
+    ]
+  },
+  "subject": {"reference": "Patient/example"}
+}
+
+{
+  "resourceType": "Condition",
+  "id": "cond-id",
+  "clinicalStatus": {
+    "coding": [{"system": "http://terminology.hl7.org/CodeSystem/condition-clinical", "code": "active"}]},
+  "category": [{
+        "coding": [
+        {"system": "http://terminology.hl7.org/CodeSystem/condition-category", "code": "problem-list-item", "display": "Problem List Item"}]
+        }],
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "472971004",
+        "display": "History of gestational diabetes mellitus"
+      }
+    ]
+  },
+  "subject": {"reference": "Patient/example"}
+}
+
+
+  {
+  "resourceType": "Observation",
+  "id": "f206",
+  "code": {
+    "coding": [
+      {
+        "fhir_comments": [
+          "   Kind of observation = Blood culture   "
+        ],
+        "system": "http://acmelabs.org",
+        "code": "104177",
+        "display": "Blood culture"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "600-7",
+        "display": "Bacteria identified in Blood by Culture"
+      }
+    ]
+  },
+  "subject": {
+    "fhir_comments": [
+      "   No identifier could be provided to this observation   "
+    ],
+    "reference": "Patient/f201",
+    "display": "Roel"
+  },
+  "issued": "2013-03-11T10:28:00+01:00",
+  "performer": [
+    {
+      "reference": "Practitioner/f202",
+      "display": "Luigi Maas"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "3092008",
+        "display": "Staphylococcus aureus"
+      }
+    ]
+  },
+}
