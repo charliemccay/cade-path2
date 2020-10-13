@@ -18,7 +18,7 @@ docker run -it -p 8080:8080 smartonfhir/hapi:r2-empty
 
 Once the FHIR server is running, open another terminal window.  From there you can then run the CADE container which will post the patients and observations to the FHIR server.  Having each container running in its own terminal will allow you to see what is happening more easily.  Note that you need to provide an absolute path for the Resources folder, hence the $(pwd).
 
-docker run -v $(pwd)/Resources:/app/Resources --network="host" ramseysys/cade-2:latest start.py
+docker run -v $(pwd)/Resources:/app/Resources --network="host" ramseysys/cade-2:latest python start.py
 
 The FHIR server can be stopped with ctrl-c.  When it is started again it the contents will remain unless the container is deleted.  This implementation of CADE uses UUIDs for the resource identifiers, so can be run multiple times without clashing identifiers - every time someone is born they are assumed to be a new person.
 
