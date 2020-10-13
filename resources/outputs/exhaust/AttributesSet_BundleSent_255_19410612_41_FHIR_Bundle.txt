@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+	<id value="61943765-23ee-4e59-b5df-8ec127d62605"/>
+	<meta>
+		<lastUpdated value="1975-02-19T00:44:00Z"/>
+		<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1"/>
+	</meta>
+	<identifier>
+		<system value="https://tools.ietf.org/html/rfc4122"/>
+		<value value="61943765-23ee-4e59-b5df-8ec127d62605"/>
+	</identifier>
+	<type value="message"/>
+	<entry>
+		<fullUrl value="61943765-23ee-4e59-b5df-8ec127d62605"/>
+		<resource>
+			<MessageHeader>
+				<id value="61943765-23ee-4e59-b5df-8ec127d62605"/>
+				<meta>
+					<profile value="https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2"/>
+				</meta>
+				<extension url="https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2">
+					<!--The value of this handling specification is dependant on the response pattern.-->
+					<extension url="BusAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="InfAckRequested">
+						<valueBoolean value="true"/>
+					</extension>
+					<extension url="RecipientType">
+						<valueCoding>
+							<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-RecipientType-1"/>
+							<code value="FA"/>
+							<display value="For Action"/>
+						</valueCoding>
+					</extension>
+					<!--				<extension url="MessageDefinition">
+					<valueReference>
+					<reference value="https://fhir.nhs.uk/STU3/MessageDefinition/ITK-NP-MessageDefinition-1"/>
+				</valueReference>-->
+				</extension>
+				<extension url="SenderReference">
+					<valueString value="None"/>
+				</extension>
+				<extension url="LocalExtension">
+					<valueString value="None"/>
+				</extension>
+				<event>
+					<system value="https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2"/>
+					<code value="ITK012M"/>
+					<display value="ITK National Pathology"/>
+				</event>
+				<receiver>
+					<reference value="urn:uuid:"/>
+				</receiver>
+				<sender>
+					<reference value="urn:uuid:"/>
+				</sender>
+				<timestamp value="1975-02-19T00:44:00Z"/>
+				<source>
+					<endpoint value="TKD13"/>
+				</source>
+				<focus>
+					<reference value="DiagnosticReport/d4f75581-ce45-4b10-b310-b84ffd190802"/>
+				</focus>
+			</MessageHeader>
+		</resource>
+	</entry>
+	<!--Provider from result-->
+	<entry>
+		<fullUrl value="urn:uuid:d8fbc330-dc17-4119-b0d8-ce16894bcd0b"/>
+		<resource>
+        <Organization>
+    <id value="d8fbc330-dc17-4119-b0d8-ce16894bcd0b"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="TKD13"/>
+    </identifier>
+    <name value="Midtown District Hospital"/>
+    <address>
+        <line value="Beckett Street"/>
+        <city value="Leeds"/>
+        <district value="West YorkShire"/>
+        <postalCode value="LS9 7TF"/>
+    </address>
+</Organization>
+		<!--Requesting Org-->
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:75788eb7-801a-4c49-909f-7b4810ca604a"/>
+		<resource>
+			<Organization>
+    <id value="75788eb7-801a-4c49-909f-7b4810ca604a"/>
+    <meta>
+        <profile value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="D82015"/>
+    </identifier>
+    <name value="Manor GP Practice"/>
+    <address>
+        <line value="30/32 Bridge Street"/>
+        <city value="Downham Market"/>
+        <district value="Norfolk"/>
+        <postalCode value="PE38 9DH"/>
+    </address>
+</Organization>
+		</resource>
+	</entry>
+	<!--Requesting Practitioner-->
+	<entry>
+		<fullUrl value="urn:uuid:582b3619-3170-456f-9488-6a6ea7ddd7e1"/>
+		<resource>
+            <Practitioner>
+    <id value="582b3619-3170-456f-9488-6a6ea7ddd7e1"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+    </meta>
+    <identifier>
+        <system value="https://fhir.nhs.uk/Id/sds-user-id"/>
+        <value value="G6040649"/>
+    </identifier>
+    <name>
+        <text value="Dr Jane Green"/>
+    </name>
+</Practitioner>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:7895ce55-e6ee-45b8-9753-51421eec20f4"/>
+		<resource>
+			 <Patient>
+    <id value="9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+    </meta>
+    <identifier>
+        <extension url="https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1">
+            <valueCodeableConcept>
+                <coding>
+                    <system value="https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1"/>
+                    <code value="01"/>
+                    <display value="Number present and verified"/>
+                </coding>
+            </valueCodeableConcept>
+        </extension>
+        <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+        <value value="7832003812"/>
+    </identifier>
+    <name>
+        <use value="official"/>
+        <family value="Robson"/>
+        <given value="Ewan"/>
+    </name>
+</Patient>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:ccc608aa-cd06-4552-9dfd-400072fadd65"/>
+		<resource>
+			 <ProcedureRequest>
+    <id value="ccc608aa-cd06-4552-9dfd-400072fadd65"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="ccc608aa-cd06-4552-9dfd-400072fadd65"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+        <display value="Robson, Ewan"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/582b3619-3170-456f-9488-6a6ea7ddd7e1"/>
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/d8fbc330-dc17-4119-b0d8-ce16894bcd0b"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:d4f75581-ce45-4b10-b310-b84ffd190802"/>
+		<resource>
+		   <DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="d4f75581-ce45-4b10-b310-b84ffd190802"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/ccc608aa-cd06-4552-9dfd-400072fadd65"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+        <display value="Robson, Ewan"/>
+    </subject>
+    <issued value="1975-02-19T00:44:00Z"/>
+    <performer>
+        <actor>
+            <reference value="Organization/d8fbc330-dc17-4119-b0d8-ce16894bcd0b"/>
+            <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/007ce253-3432-4684-8901-dfaa9e1e9a7d"/>
+    </result>
+</DiagnosticReport>
+		</resource>
+	</entry>
+	<entry>
+		<fullUrl value="urn:uuid:6d376898-f79e-4d39-a49c-22ecaf8d3106"/>
+		<resource>
+		   <DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="d4f75581-ce45-4b10-b310-b84ffd190802"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/ccc608aa-cd06-4552-9dfd-400072fadd65"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+        <display value="Robson, Ewan"/>
+    </subject>
+    <issued value="1975-02-19T00:44:00Z"/>
+    <performer>
+        <actor>
+            <reference value="Organization/d8fbc330-dc17-4119-b0d8-ce16894bcd0b"/>
+            <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/007ce253-3432-4684-8901-dfaa9e1e9a7d"/>
+    </result>
+</DiagnosticReport>
+		</resource>
+	</entry>
+
+	<entry>
+	<fullUrl value="urn:uuid:007ce253-3432-4684-8901-dfaa9e1e9a7d"/>
+		<resource>
+			<Observation>
+    <id value="007ce253-3432-4684-8901-dfaa9e1e9a7d"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="007ce253-3432-4684-8901-dfaa9e1e9a7d"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="27113001"/>
+            <display value="Body weight"/>
+        </coding>
+    </code>
+    <performer>
+        <reference value="Organization/d8fbc330-dc17-4119-b0d8-ce16894bcd0b"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="118"/>
+        <unit value="kg"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/6d376898-f79e-4d39-a49c-22ecaf8d3106"/>
+    </specimen>
+</Observation>
+		</resource>
+	</entry>
+</Bundle>
+
+http://localhost:8080/baseDstu3/Bundle/$validate
+200
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">WARNING</td>
+               <td>[Bundle.meta.profile[0]]</td>
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[1].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">INFORMATION</td> 
+               <td>[Bundle.entry[1].resource.extension[1]]</td> 
+               <td>
+                  <pre>Unknown extension https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[1].resource.receiver]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle urn:uuid:</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[1].resource.sender]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle urn:uuid:</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[2].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[3].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[4].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[5].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Patient-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">INFORMATION</td> 
+               <td>[Bundle.entry[5].resource.identifier.extension]</td> 
+               <td>
+                  <pre>Unknown extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[6].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[6].resource.subject]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[7].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[7].resource.code]</td> 
+               <td>
+                  <pre>Error unable to find code system http://loinc.org validating CodeableConcept</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[7].resource.subject]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[8].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[8].resource.code]</td> 
+               <td>
+                  <pre>Error unable to find code system http://loinc.org validating CodeableConcept</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[8].resource.subject]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[9].resource.meta.profile[0]]</td> 
+               <td>
+                  <pre>StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1&quot; could not be resolved</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">INFORMATION</td> 
+               <td>[Bundle.entry[9].resource.category]</td> 
+               <td>
+                  <pre>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#394595002)</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[9].resource]</td> 
+               <td>
+                  <pre>All observations should have a subject</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry[9].resource]</td> 
+               <td>
+                  <pre>All observations should have an effectiveDateTime or an effectivePeriod</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry:0]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle urn:uuid:</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry:0]</td> 
+               <td>
+                  <pre>URN reference is not locally contained within the bundle urn:uuid:</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.1]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.2]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.3]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.4]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.5]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.6]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.7]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+            <tr> 
+               <td style="font-weight: bold;">WARNING</td> 
+               <td>[Bundle.entry.8]</td> 
+               <td>
+                  <pre>Entry isn't reachable by traversing from first Bundle entry</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/ITK-Message-Bundle-1&quot; could not be resolved"/>
+      <location value="Bundle.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/ITK-MessageHeader-2&quot; could not be resolved"/>
+      <location value="Bundle.entry[1].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="information"/>
+      <code value="processing"/>
+      <diagnostics value="Unknown extension https://fhir.nhs.uk/STU3/StructureDefinition/Extension-ITK-MessageHandling-2"/>
+      <location value="Bundle.entry[1].resource.extension[1]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle urn:uuid:"/>
+      <location value="Bundle.entry[1].resource.receiver"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle urn:uuid:"/>
+      <location value="Bundle.entry[1].resource.sender"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[2].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[3].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Practitioner-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[4].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Patient-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[5].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="information"/>
+      <code value="processing"/>
+      <diagnostics value="Unknown extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1"/>
+      <location value="Bundle.entry[5].resource.identifier.extension"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[6].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+      <location value="Bundle.entry[6].resource.subject"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[7].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Error unable to find code system http://loinc.org validating CodeableConcept"/>
+      <location value="Bundle.entry[7].resource.code"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+      <location value="Bundle.entry[7].resource.subject"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[8].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Error unable to find code system http://loinc.org validating CodeableConcept"/>
+      <location value="Bundle.entry[8].resource.code"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+      <location value="Bundle.entry[8].resource.subject"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="StructureDefinition reference &quot;https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1&quot; could not be resolved"/>
+      <location value="Bundle.entry[9].resource.meta.profile[0]"/>
+   </issue>
+   <issue>
+      <severity value="information"/>
+      <code value="processing"/>
+      <diagnostics value="None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/observation-category (http://hl7.org/fhir/ValueSet/observation-category, and a code is recommended to come from this value set) (codes = http://snomed.info/sct#394595002)"/>
+      <location value="Bundle.entry[9].resource.category"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="All observations should have a subject"/>
+      <location value="Bundle.entry[9].resource"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="All observations should have an effectiveDateTime or an effectivePeriod"/>
+      <location value="Bundle.entry[9].resource"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle urn:uuid:"/>
+      <location value="Bundle.entry:0"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="URN reference is not locally contained within the bundle urn:uuid:"/>
+      <location value="Bundle.entry:0"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.1"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.2"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.3"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.4"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.5"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.6"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.7"/>
+   </issue>
+   <issue>
+      <severity value="warning"/>
+      <code value="processing"/>
+      <diagnostics value="Entry isn't reachable by traversing from first Bundle entry"/>
+      <location value="Bundle.entry.8"/>
+   </issue>
+</OperationOutcome>

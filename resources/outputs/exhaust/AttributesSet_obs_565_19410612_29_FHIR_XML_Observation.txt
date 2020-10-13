@@ -1,0 +1,61 @@
+<Observation>
+    <id value="78c3daf4-6909-4c2a-9fb3-9b19a2f226e2"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="78c3daf4-6909-4c2a-9fb3-9b19a2f226e2"/>
+    </identifier>
+    <status value="final"/>
+    <category>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="394595002"/>
+            <display value="Pathology (qualifier value)"/>
+        </coding>
+    </category>
+    <!--What is being tested-->
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="27113001"/>
+            <display value="Body weight"/>
+        </coding>
+    </code>
+    <performer>
+        <reference value="Organization/a9cbebaa-edb4-4fa0-a50b-30e77e54df74"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <valueQuantity>
+        <value value="97"/>
+        <unit value="kg"/>
+    </valueQuantity>
+    <specimen>
+        <reference value="Specimen/285b3dc1-d7f5-4d11-9559-44b76fda4614"/>
+    </specimen>
+</Observation>
+http://localhost:8080/baseDstu3/Observation/78c3daf4-6909-4c2a-9fb3-9b19a2f226e2
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Observation/78c3daf4-6909-4c2a-9fb3-9b19a2f226e2/_history/1&quot; in 3ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Observation/78c3daf4-6909-4c2a-9fb3-9b19a2f226e2/_history/1&quot; in 3ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,56 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="f0221ecc-53e1-486a-8de9-eaeac9391472"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/fee77346-042d-41a1-9942-62452e13a0ce"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/ec3a7b78-9c54-4fbc-9707-03fc3e29ad1c"/>
+        <display value="Williams, Robert"/>
+    </subject>
+    <issued value="1993-10-25T00:29:00Z"/>
+    <performer>
+        <actor>
+            <reference value="Organization/29d1ff45-5e64-431c-b7b7-fb1f74458d3d"/>
+            <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/18cb3c87-6dbe-457f-927a-8b1ff6a8382d"/>
+    </result>
+</DiagnosticReport>
+http://localhost:8080/baseDstu3/DiagnosticReport/f0221ecc-53e1-486a-8de9-eaeac9391472
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/f0221ecc-53e1-486a-8de9-eaeac9391472/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/f0221ecc-53e1-486a-8de9-eaeac9391472/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="6f709b14-b00d-496f-9835-aab5be4f0147"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6f709b14-b00d-496f-9835-aab5be4f0147"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/b2bc6692-c829-4129-befa-9210d44fc764"/>
+        <display value="Atkins, Josh"/>
+    </subject>
+    <receivedTime value="1985-11-23T00:17:00Z"/>
+    <collection>
+        <collectedDateTime value="1985-11-23T00:17:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/6f709b14-b00d-496f-9835-aab5be4f0147
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/6f709b14-b00d-496f-9835-aab5be4f0147/_history/1&quot; in 2ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/6f709b14-b00d-496f-9835-aab5be4f0147/_history/1&quot; in 2ms"/>
+   </issue>
+</OperationOutcome>

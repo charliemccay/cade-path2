@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="c6e305c7-37d5-44dc-bda8-7d4bda3bcac8"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="c6e305c7-37d5-44dc-bda8-7d4bda3bcac8"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/a6f28e56-3a33-4b70-b7c4-110d7a510447"/>
+        <display value="Perry, Poppy"/>
+    </subject>
+    <receivedTime value="1962-01-28T00:45:00Z"/>
+    <collection>
+        <collectedDateTime value="1962-01-28T00:45:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/c6e305c7-37d5-44dc-bda8-7d4bda3bcac8
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/c6e305c7-37d5-44dc-bda8-7d4bda3bcac8/_history/1&quot; in 2ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/c6e305c7-37d5-44dc-bda8-7d4bda3bcac8/_history/1&quot; in 2ms"/>
+   </issue>
+</OperationOutcome>

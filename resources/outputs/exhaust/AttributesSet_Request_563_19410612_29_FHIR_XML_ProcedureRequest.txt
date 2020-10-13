@@ -1,0 +1,60 @@
+<ProcedureRequest>
+    <id value="b9d664ae-d0f6-4e99-bac1-13bda962cfe3"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="b9d664ae-d0f6-4e99-bac1-13bda962cfe3"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/0d9fc528-ddbc-4301-aade-008dfc59a9e2"/>
+        <display value="May, Sam"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/9811aeea-2feb-4d48-a923-2a4c8b9b82de"/>
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/a9cbebaa-edb4-4fa0-a50b-30e77e54df74"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://localhost:8080/baseDstu3/ProcedureRequest/b9d664ae-d0f6-4e99-bac1-13bda962cfe3
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/b9d664ae-d0f6-4e99-bac1-13bda962cfe3/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/b9d664ae-d0f6-4e99-bac1-13bda962cfe3/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

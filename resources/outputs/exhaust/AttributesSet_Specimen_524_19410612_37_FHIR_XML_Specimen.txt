@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="2f32154f-8c25-4ae1-b254-b774fb04e744"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="2f32154f-8c25-4ae1-b254-b774fb04e744"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/d0b7a045-7105-4968-a339-b2d67651882d"/>
+        <display value="Fraser, Sofia"/>
+    </subject>
+    <receivedTime value="2007-03-30T00:46:00Z"/>
+    <collection>
+        <collectedDateTime value="2007-03-30T00:46:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/2f32154f-8c25-4ae1-b254-b774fb04e744
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/2f32154f-8c25-4ae1-b254-b774fb04e744/_history/1&quot; in 8ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/2f32154f-8c25-4ae1-b254-b774fb04e744/_history/1&quot; in 8ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="6fa02601-33ce-46d1-8148-cfa7d49e4588"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6fa02601-33ce-46d1-8148-cfa7d49e4588"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/a1961b35-0f1d-4a15-b2b1-4e91b39e2852"/>
+        <display value="May, Brandon"/>
+    </subject>
+    <receivedTime value="2014-05-11T00:46:00Z"/>
+    <collection>
+        <collectedDateTime value="2014-05-11T00:46:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/6fa02601-33ce-46d1-8148-cfa7d49e4588
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/6fa02601-33ce-46d1-8148-cfa7d49e4588/_history/1&quot; in 3ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/6fa02601-33ce-46d1-8148-cfa7d49e4588/_history/1&quot; in 3ms"/>
+   </issue>
+</OperationOutcome>

@@ -9,4 +9,4 @@ services:
     network_mode: "service:fhir"
     command: "python start.py"
     volumes:
-    - ./resources:/app/resources
+    - ./resources:/usr/src/app/resources

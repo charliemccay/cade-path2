@@ -1,0 +1,60 @@
+<ProcedureRequest>
+    <id value="fee77346-042d-41a1-9942-62452e13a0ce"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="fee77346-042d-41a1-9942-62452e13a0ce"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/ec3a7b78-9c54-4fbc-9707-03fc3e29ad1c"/>
+        <display value="Williams, Robert"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/a69567e3-0cfb-4e73-99e7-44df9da8a863"/>
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/29d1ff45-5e64-431c-b7b7-fb1f74458d3d"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://localhost:8080/baseDstu3/ProcedureRequest/fee77346-042d-41a1-9942-62452e13a0ce
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/fee77346-042d-41a1-9942-62452e13a0ce/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/fee77346-042d-41a1-9942-62452e13a0ce/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

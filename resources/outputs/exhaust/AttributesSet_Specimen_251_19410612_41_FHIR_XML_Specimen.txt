@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="6d376898-f79e-4d39-a49c-22ecaf8d3106"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="6d376898-f79e-4d39-a49c-22ecaf8d3106"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/9bde026d-0d7f-4d41-921d-7ee2f788610c"/>
+        <display value="Robson, Ewan"/>
+    </subject>
+    <receivedTime value="1975-02-19T00:36:00Z"/>
+    <collection>
+        <collectedDateTime value="1975-02-19T00:36:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/6d376898-f79e-4d39-a49c-22ecaf8d3106
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/6d376898-f79e-4d39-a49c-22ecaf8d3106/_history/1&quot; in 2ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/6d376898-f79e-4d39-a49c-22ecaf8d3106/_history/1&quot; in 2ms"/>
+   </issue>
+</OperationOutcome>

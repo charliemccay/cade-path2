@@ -1,0 +1,31 @@
+EventID,pathway,Node,DecisionTable,Attribute,Value,Date
+351,Path1,Initial_patient_GP_Visit,,,,1983-08-30T00:00:00
+351,Path1,Initial_patient_GP_Visit,,UUID,82828555-60d0-452d-9281-4b0e0ca647d1,1983-08-30T00:00:00
+351,Path1,Initial_patient_GP_Visit,,NhsNumber,7832003812,1983-08-30T00:00:00
+351,Path1,Initial_patient_GP_Visit,,randID,3.9456805735424942,1983-08-30T00:00:00
+351,Path1,Initial_patient_GP_Visit,,anotheTest,{'Value': UUID('41822463-67bd-4d11-8113-b727b8f54e65')},1983-08-30T00:00:00
+352,Path1,patient_assessment,,,,1983-08-30T00:00:00
+353,Path1,test_request,,,,1983-08-30T00:34:00
+353,Path1,test_request,,PatientRcorded,True,1983-08-30T00:34:00
+354,Path1,Specimen_check,,,,1983-08-30T00:34:00
+354,Path1,Specimen_check,,PerformingOrg,"{'Code': 'TKD13', 'DisplayName': 'Midtown District Hospital', 'AddressLine': 'Beckett Street', 'AddressCity': 'Leeds', 'AddressDistrict': 'West YorkShire', 'AddressPostalCode': 'LS9 7TF'}",1983-08-30T00:34:00
+354,Path1,Specimen_check,,RequestingHCP,"{'Code': 'G6040649', 'DisplayName': 'Dr Jane Green'}",1983-08-30T00:34:00
+354,Path1,Specimen_check,,OrgRequesting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1983-08-30T00:34:00
+355,Path1,specimen_ready_for_test,,,,1983-08-30T00:34:00
+355,Path1,specimen_ready_for_test,,Request,"{'Code': '26604007', 'DisplayName': 'FBC - Full blood count', 'text': 'FBC'}",1983-08-30T00:34:00
+355,Path1,specimen_ready_for_test,,Specimen,"{'Code': '53130003', 'DisplayName': 'Venous blood (substance)'}",1983-08-30T00:34:00
+355,Path1,specimen_ready_for_test,,CollectingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1983-08-30T00:34:00
+355,Path1,specimen_ready_for_test,,OrgCollecting,"{'Code': 'D82015', 'DisplayName': 'Manor GP Practice', 'AddressLine': '30/32 Bridge Street', 'AddressCity': 'Downham Market', 'AddressDistrict': 'Norfolk', 'AddressPostalCode': 'PE38 9DH'}",1983-08-30T00:34:00
+356,Path1,lab_test,,,,1983-08-30T00:34:00
+357,Path1,test_report,,,,1983-08-30T00:59:00
+357,Path1,test_report,,obs,"{'code': '27113001', 'DisplayName': 'Body weight', 'value': 96, 'unit': 'kg'}",1983-08-30T00:59:00
+357,Path1,test_report,,PerformingHCP,"{'Code': 'J7040649', 'DisplayName': 'Alice Jones'}",1983-08-30T00:59:00
+358,Path1,send_report,,,,1983-08-30T00:59:00
+359,Path1,receive_report,,,,1983-08-30T00:59:00
+359,Path1,receive_report,,Report,"{'Code': '1028441000000104', 'DisplayName': 'Potassium Level (Observable entity)'}",1983-08-30T00:59:00
+359,Path1,receive_report,,BundleSent,True,1983-08-30T00:59:00
+360,Path1,GP_checks_report,,,,1983-08-30T00:59:00
+360,Path1,GP_checks_report,,Observation,"{'Value': '4.8', 'Unit': 'mmol/L', 'ReferenceLow': '3.5', 'ReferenceHigh': '5.3'}",1983-08-30T00:59:00
+361,Path1,inform_patient,,,,1983-08-30T00:59:00
+362,Path1,Finish,,,,1983-08-30T21:59:00
+363,Path1,Finish,,,,1983-08-30T21:59:00

@@ -1,0 +1,56 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="af34d5fd-3053-41da-b374-3f67e58a7b74"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/1dd53dd0-eef5-491a-ac3c-e7bf84857f53"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/5b706996-68a3-4d41-b83a-b08d89d02787"/>
+        <display value="Cooke, Holly"/>
+    </subject>
+    <issued value="1956-05-06T01:06:00Z"/>
+    <performer>
+        <actor>
+            <reference value="Organization/98d19f6a-ce29-4ae1-8951-0cc9cf91a259"/>
+            <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/e9634459-e44a-4461-a581-847d33f937fd"/>
+    </result>
+</DiagnosticReport>
+http://localhost:8080/baseDstu3/DiagnosticReport/af34d5fd-3053-41da-b374-3f67e58a7b74
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/af34d5fd-3053-41da-b374-3f67e58a7b74/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/af34d5fd-3053-41da-b374-3f67e58a7b74/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="c250d970-fc72-402f-8356-415a2849ba23"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="c250d970-fc72-402f-8356-415a2849ba23"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/ec3a7b78-9c54-4fbc-9707-03fc3e29ad1c"/>
+        <display value="Williams, Robert"/>
+    </subject>
+    <receivedTime value="1993-10-25T00:10:00Z"/>
+    <collection>
+        <collectedDateTime value="1993-10-25T00:10:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/c250d970-fc72-402f-8356-415a2849ba23
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/c250d970-fc72-402f-8356-415a2849ba23/_history/1&quot; in 2ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/c250d970-fc72-402f-8356-415a2849ba23/_history/1&quot; in 2ms"/>
+   </issue>
+</OperationOutcome>

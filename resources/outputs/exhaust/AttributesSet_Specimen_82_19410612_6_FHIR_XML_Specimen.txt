@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="66b1c246-a171-4ad3-81fe-50b3e4841139"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="66b1c246-a171-4ad3-81fe-50b3e4841139"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/b3542b2e-0e2c-44f8-b673-6259a6d3dbfb"/>
+        <display value="O'Neill, Ethan"/>
+    </subject>
+    <receivedTime value="1958-10-23T00:46:00Z"/>
+    <collection>
+        <collectedDateTime value="1958-10-23T00:46:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/66b1c246-a171-4ad3-81fe-50b3e4841139
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/66b1c246-a171-4ad3-81fe-50b3e4841139/_history/1&quot; in 4ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/66b1c246-a171-4ad3-81fe-50b3e4841139/_history/1&quot; in 4ms"/>
+   </issue>
+</OperationOutcome>

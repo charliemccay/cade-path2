@@ -1,0 +1,50 @@
+<Specimen>
+    <id value="4b6c1c4b-68ba-4482-a9db-4921957f2f1e"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-Specimen-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="4b6c1c4b-68ba-4482-a9db-4921957f2f1e"/>
+    </identifier>
+    <status value="available"/>
+    <type>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="53130003"/>
+            <display value="Venous blood (substance)"/>
+        </coding>
+    </type>
+    <subject>
+        <reference value="Patient/b1da6893-be89-44c3-b969-af690542dc91"/>
+        <display value="Iqbal, Elizabeth"/>
+    </subject>
+    <receivedTime value="1970-01-09T00:42:00Z"/>
+    <collection>
+        <collectedDateTime value="1970-01-09T00:42:00Z"/>
+    </collection>
+</Specimen>
+http://localhost:8080/baseDstu3/Specimen/4b6c1c4b-68ba-4482-a9db-4921957f2f1e
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;Specimen/4b6c1c4b-68ba-4482-a9db-4921957f2f1e/_history/1&quot; in 3ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;Specimen/4b6c1c4b-68ba-4482-a9db-4921957f2f1e/_history/1&quot; in 3ms"/>
+   </issue>
+</OperationOutcome>

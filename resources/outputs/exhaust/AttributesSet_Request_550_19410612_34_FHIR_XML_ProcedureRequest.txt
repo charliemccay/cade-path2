@@ -1,0 +1,60 @@
+<ProcedureRequest>
+    <id value="e30ada16-ba8a-4d25-af1e-dbf359f560c8"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-ProcedureRequest-1"/>
+    </meta>
+    <identifier>
+        <system value="https://tools.ietf.org/html/rfc4122"/>
+        <value value="e30ada16-ba8a-4d25-af1e-dbf359f560c8"/>
+    </identifier>
+    <status value="active"/>
+    <intent value="order"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="26604007"/>
+            <display value="FBC - Full blood count"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/6fb804a3-de31-4602-891a-3042c860744d"/>
+        <display value="Whittaker, Jayden"/>
+    </subject>
+    <requester>
+        <agent>
+            <reference value="Practitioner/a6bf24a2-4872-44cd-bc6e-1461739d44c7"/>
+            <display value="Dr Jane Green"/>
+        </agent>
+    </requester>
+    <performer>
+        <reference value="Organization/ce5dff7a-54f2-4f22-baf0-1904002a667d"/>
+        <display value="Midtown District Hospital"/>
+    </performer>
+    <note>
+        <text value="FBC"/>
+    </note>
+</ProcedureRequest>
+http://localhost:8080/baseDstu3/ProcedureRequest/e30ada16-ba8a-4d25-af1e-dbf359f560c8
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;ProcedureRequest/e30ada16-ba8a-4d25-af1e-dbf359f560c8/_history/1&quot; in 3ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;ProcedureRequest/e30ada16-ba8a-4d25-af1e-dbf359f560c8/_history/1&quot; in 3ms"/>
+   </issue>
+</OperationOutcome>

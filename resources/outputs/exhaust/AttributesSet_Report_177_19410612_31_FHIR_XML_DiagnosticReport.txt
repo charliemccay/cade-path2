@@ -1,0 +1,56 @@
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+    <id value="d6266d8d-8abf-419c-a1c1-42784e2931d5"/>
+    <meta>
+        <profile value="https://fhir.nhs.uk/STU3/StructureDefinition/CareConnect-DiagnosticReport-1"/>
+    </meta>
+    <!--Test Request Summary-->
+    <basedOn>
+        <reference value="ProcedureRequest/d68ab6ff-2159-4230-ac98-59aefa3a4701"/>
+    </basedOn>
+    <status value="final"/>
+    <code>
+        <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="721981007"/>
+            <display value="Diagnostic studies report"/>
+        </coding>
+    </code>
+    <subject>
+        <reference value="Patient/2e7e0b52-bcae-42d0-a8e1-16d2cd2ec42b"/>
+        <display value="Byrne, Bailey"/>
+    </subject>
+    <issued value="1970-01-06T00:39:00Z"/>
+    <performer>
+        <actor>
+            <reference value="Organization/a812b8b4-f7ec-4841-a7a0-9acf9e0e8314"/>
+            <display value="Midtown District Hospital"/>
+        </actor>
+    </performer>
+    <result>
+        <reference value="Observation/b6e5aaf6-82fd-442b-a159-57e34aa240b3"/>
+    </result>
+</DiagnosticReport>
+http://localhost:8080/baseDstu3/DiagnosticReport/d6266d8d-8abf-419c-a1c1-42784e2931d5
+201
+<OperationOutcome xmlns="http://hl7.org/fhir">
+   <text>
+      <status value="generated"/>
+      <div xmlns="http://www.w3.org/1999/xhtml">
+         <h1>Operation Outcome</h1>
+         <table border="0">
+            <tr>
+               <td style="font-weight: bold;">INFORMATION</td>
+               <td>[]</td>
+               <td>
+                  <pre>Successfully created resource &quot;DiagnosticReport/d6266d8d-8abf-419c-a1c1-42784e2931d5/_history/1&quot; in 6ms</pre>
+               </td> 
+            </tr> 
+         </table> 
+      </div>
+   </text>
+   <issue>
+      <severity value="information"/>
+      <code value="informational"/>
+      <diagnostics value="Successfully created resource &quot;DiagnosticReport/d6266d8d-8abf-419c-a1c1-42784e2931d5/_history/1&quot; in 6ms"/>
+   </issue>
+</OperationOutcome>
